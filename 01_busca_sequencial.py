@@ -124,3 +124,7 @@ print(f"Posição de ZULEICA: {busca_sequencial(nomes, 'ZULEICA')}")
 hora_fim = time()
 print(f"Tempo gasto procurando ZULEICA: {(hora_fim - hora_ini) * 1000}ms")
 
+hora_ini = time()
+print(f"Posição de LUNISVALDO: {busca_sequencial(nomes, 'LUNISVALDO')}")
+hora_fim = time()
+print(f"Tempo gasto procurando LUNISVALDO: {(hora_fim - hora_ini) * 1000}ms")
