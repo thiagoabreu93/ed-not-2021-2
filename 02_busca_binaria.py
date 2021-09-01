@@ -40,9 +40,9 @@ def busca_binaria(lista, valor_busca):
     return -1
 
 hora_ini = time()
-print(f"Posição de FAUSTO: {busca_binaria(nomes, 'FAUSTO')}")
+print(f"Posição de THIAGO: {busca_binaria(nomes, 'THIAGO')}")
 hora_fim = time()
-print(f"Tempo gasto procurando FAUSTO: {(hora_fim - hora_ini) * 1000}ms")
+print(f"Tempo gasto procurando THIAGO: {(hora_fim - hora_ini) * 1000}ms")
 
 hora_ini = time()
 print(f"Posição de ZULEICA: {busca_binaria(nomes, 'ZULEICA')}")
