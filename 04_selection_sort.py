@@ -23,7 +23,6 @@ def selection_sort(lista):
     trocas = 0
 
     # Percurso da lista até a penúltima posição
-
     # Seleciona (isola) o elemento que será comparado
     for pos_sel in range(len(lista) - 1):
         passadas += 1
