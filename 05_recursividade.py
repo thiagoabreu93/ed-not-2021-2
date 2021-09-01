@@ -36,10 +36,16 @@ print(f'7! = {fatorial(7)}')
 #
 # Em programação, a recursividade se traduz quando uma função efetua chamadas a si própria.
 
+# Implementação recursiva
 def fatorial2(n):
-    if n <= 1:
+    # Em uma função cursiva, condição de saída é aquela em que a função
+    # é capaz de retornar um resultado SEM chamar novamente a si mesma.
+    if n <= 1: # Condição de Saída
         return 1
     return n * fatorial2(n - 1)
 
 print('------------------------------------------------------------------')
-print(f'5! = {fatorial2(5)}')
+print(f'519! = {fatorial2(519)}')
+
+#import sys
+#print(sys.maxsize)
