@@ -69,15 +69,24 @@ print(f"Passadas: {passadas}, comparações: {comps}, trocas: {trocas}")
 
 from data.nomes_desord import nomes
 from time import time
+import tracemalloc
 
 #nomes_parcial = nomes[:30000]   # Usa apenas os primeiros 30 mil nomes
 
 ini = time()
+tracemalloc.start()
 #selection_sort(nomes_parcial)
 selection_sort(nomes)
+
+mem_atual, mem_pico = tracemalloc.get_traced_memory()
+
 fim = time()
 
 #print(nomes_parcial)
 print(nomes)
 print(f"Tempo: {fim - ini}")
 print(f"Passadas: {passadas}, comparações: {comps}, trocas: {trocas}")
+
+print(f"Pico de memória: {mem_pico / 1024 / 1024}MB")
+
+tracemalloc.stop()
